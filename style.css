@@ -1,0 +1,32 @@
+.item-card{
+    max-width: 420px;
+  }
+  .item-container__image{
+    min-height: 200px;
+    max-width: 420px;
+    cursor: pointer;
+  }
+
+  li{
+    max-width: 250px;
+  }
+  .values{
+    font-size: 24px;
+  }
+  #totalValue{
+    font-size: 24px;
+  }
+  .values__box{
+    display: flex;
+    text-align: center;
+  }
+  .total__value{
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  .card-button{
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+
