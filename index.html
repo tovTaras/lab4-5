@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab-3</title>
+  <link>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+
+  <body class="bg-light">
+    <div class="container p-3">
+      <div class="row mb-3">
+        <h1 class="text-center mb-3">Add car</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mt-2">
+          <form id="add_form" class="bg-light">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name_input" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Max speed</label>
+              <input type="text" class="form-control" id="max_speed_input" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputNumber1" class="form-label">Millage</label>
+              <input type="text" class="form-control" id="millage_input" />
+            </div>
+            <button id="submit_button" type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div class="mt-5">
+            <h4 class="md-3">Find a car</h4>
+            <input id="find_input" type="text" class="form-control" />
+            <button id="find_button" type="button" class="btn btn-primary mt-4">Find</button>
+            <button id="cancel_find_button" type="button" class="btn btn-danger mt-4">Cancel</button>
+          </div>
+          <div class="mt-5">
+            <h5>Sort by</h5>
+            <select id="property_sorting" class="form-select form-select-lg mb-3"
+              aria-label=".form-select-lg example">
+              <option selected>...</option>
+              <option value="max_speed">Max speed</option>
+              <option value="millage">Millage</option>
+            </select>
+            <button id="sort_button" type="button" class="btn btn-primary">Reverse sort</button>
+          </div>
+          <div class="values__box mt-5">
+            <div>
+              <select id="property_total_value" class="form-select form-select-lg mb-3">
+                <option selected >...</option>
+                <option value="max_speed" id="max_speed_count">Max speed</option>
+                <option value="millage" id="millage_count">Millage</option>
+              </select>
+            </div>
+            <div class="total__value">
+              <p id="totalValue">0</p>
+            </div>
+          </div>
+        </div>
+
+        <ul id="items_container" class="col-md-4 mt-5 mt-md-2 mx-auto">
+        </ul>
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+          crossorigin="anonymous"></script>
+        <script type="module" src="index.js"></script>
+  </body>
+
+</html>
